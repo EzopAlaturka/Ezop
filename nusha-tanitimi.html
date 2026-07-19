@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nüsha Tanıtımı | Ezop Alaturka</title>
+  <meta name="description" content="Ezop Alaturka nüshalarının karşılaştırmalı ve etkileşimli tanıtım sayfası.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html" aria-label="Ezop Alaturka ana sayfa">
+        <img class="brand-rabbit" src="./logo photos/rabbit.avif" alt="Ezop Alaturka tavşan logosu">
+        <img class="brand-name" src="./logo photos/2.png.avif" alt="Ezop Alaturka yazı logosu">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menü</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./nusha-tanitimi.html">Nüsha Tanıtımı</a>
+        <a href="./13 mayıs - tableModded_c6_deneme.html">Ezop Koleksiyonu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section nusha-hero">
+      <div class="container">
+        <p class="eyebrow nusha-eyebrow">Nüsha Tanıtımı</p>
+        <h1 class="nusha-title">Nüshaları Etkileşimli Olarak Keşfedin</h1>
+        <p class="nusha-intro">
+          Aşağıdaki kartlardan bir nüsha seçtiğinizde sayfanın altındaki ilgili ayrıntı bölümüne
+          otomatik olarak yönlendirilirsiniz. Bu içerik, proje kapsamındaki nüsha tavsiflerini kolay okunur bir biçimde sunar.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="nusha-table-wrap">
+          <table class="nusha-table" id="nushaTable" aria-label="Ezop nüsha matrisi">
+            <thead>
+              <tr>
+                <th colspan="2">Ezop 1</th>
+                <th>Ezop 2</th>
+                <th colspan="2">Ezop 3</th>
+                <th>Ezop 4</th>
+              </tr>
+              <tr>
+                <th>Kategori 1</th>
+                <th>Kategori 2</th>
+                <th>Kategori 3</th>
+                <th>Kategori 4</th>
+                <th>Kategori 5</th>
+                <th>Kategori 6</th>
+              </tr>
+            </thead>
+            <tbody id="nushaMatrixBody"></tbody>
+            <tfoot>
+              <tr>
+                <td>122 hikaye</td>
+                <td>85 hikaye</td>
+                <td>149 hikaye</td>
+                <td>82 (+3) hikaye</td>
+                <td>96 hikaye</td>
+                <td>215 hikaye</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nusha-detaylar">
+      <div class="container">
+        <h2>Nüsha Detayları</h2>
+        <p class="note">Tablodan bir entry seçtiğinizde bu bölüm açılır.</p>
+        <div class="nusha-detail-empty" id="nushaDetailEmpty">Henüz bir nüsha seçilmedi.</div>
+        <article class="nusha-detail-single" id="nushaDetailPanel" hidden></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Ezop Alaturka</p>
+      <span>İletişim: <a class="inline-link" href="mailto:mehmet.kuru@sabanciuniv.edu">mehmet.kuru@sabanciuniv.edu</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
